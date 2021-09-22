@@ -348,5 +348,62 @@ ul, li {
   font-family: Gilroy;
   src: url("/Gilroy-FREE");
 }
+.footer-background {
+  height: 410px;
+  background: #FAFAFA;
+}
+.footer-background .block-with-link {
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 106px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer-background .block-with-link p {
+  font-size: 18px;
+  font-family: Homemade Apple;
+  font-weight: 400;
+  line-height: 39px;
+  color: #F7941E;
+}
+.footer-background .block-with-link ul {
+  display: flex;
+}
+.footer-background .block-with-link ul li {
+  font-size: 14px;
+  font-family: Gilroy, sans-serif;
+  line-height: 20px;
+}
+.footer-background .block-with-link ul li a {
+  color: black;
+}
+.footer-background .block-with-link ul li .link {
+  padding-right: 81px;
+}
+.footer-background .footer-line {
+  width: 1000px;
+  border: 0.1px solid black;
+  margin: 0 auto;
+  margin-top: 43px;
+}
+.footer-background .website-link img {
+  padding: 55px 25px 0 0;
+}
+.footer-background .private-terms {
+  display: flex;
+  justify-content: center;
+  margin-top: 72px;
+}
+.footer-background .private-terms span {
+  font-size: 14px;
+  font-family: Gilroy, sans-serif;
+  line-height: 20px;
+  padding-right: 14px;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url("/Gilroy-FREE");
+}
 
 /*# sourceMappingURL=style.css.map */
