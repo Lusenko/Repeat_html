@@ -1,0 +1,94 @@
+@import "variable";
+.first-block-with-girlfriend{
+  display: flex;
+  justify-content: space-between;
+
+  background: $greyColor;
+
+  .block-with-title{
+    width: 433px;
+    text-align: start;
+
+    margin: 0 auto;
+    padding-top: 154px;
+
+    h1{
+      font-size: 56px;
+      font-family: $mainFont;
+
+      line-height: 69px;
+    }
+    p{
+      width: 422px;
+
+      font-size: 20px;
+      font-family: $mainFont;
+
+      line-height: 28px;
+
+      padding-top: 46px;
+    }
+    button{
+      width: 200px;
+      height: 60px;
+
+      margin-top: 75px;
+
+      background: $orangeColor;
+
+      border-radius: 5px;
+      border: none;
+
+      font-size: 18px;
+      font-family: $mainFont;
+
+      line-height: 22px;
+    }
+  }
+}
+.second-block-with-girlfriend{
+  display: flex;
+
+  background: $greyColor;
+
+  .block-with-title{
+    width: 441px;
+
+    margin: 0 auto;
+    padding-top: 164px;
+
+    text-align: start;
+
+
+    span{
+      font-size: 32px;
+      font-family: $mainFont;
+
+      line-height: 45px;
+    }
+    p{
+      font-size: 20px;
+      font-family: $mainFont;
+
+      padding-top: 23px;
+
+      line-height: 28px;
+    }
+    button{
+      width: 200px;
+      height: 60px;
+
+      margin-top: 35px;
+
+      border: 1px solid $orangeColor;
+      border-radius: 5px;
+
+      font-size: 18px;
+      font-family: $mainFont;
+
+      line-height: 24px;
+
+      color: $orangeColor;
+    }
+  }
+}
