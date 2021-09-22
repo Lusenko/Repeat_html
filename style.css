@@ -207,6 +207,50 @@ ul, li {
   box-shadow: none;
 }
 
+.register-block {
+  margin-top: 137px;
+  height: 240px;
+  display: flex;
+  background: #F7941E;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.register-block .block-with-title {
+  text-align: start;
+}
+.register-block .block-with-title h1 {
+  font-size: 32px;
+  font-family: Gilroy, sans-serif;
+  line-height: 45px;
+}
+.register-block .block-with-title span {
+  font-size: 32px;
+  font-family: Gilroy, sans-serif;
+  line-height: 45px;
+}
+.register-block .register-button .find-gift-button {
+  margin-right: 16px;
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  background: #231F20;
+  color: white;
+  font-size: 18px;
+  font-family: Gilroy, sans-serif;
+  line-height: 22px;
+}
+.register-block .register-button .info-button {
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: #F7941E;
+  font-size: 18px;
+  font-family: Gilroy, sans-serif;
+  line-height: 25px;
+}
+
 @font-face {
   font-family: Gilroy;
   src: url("/Gilroy-FREE");
