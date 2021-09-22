@@ -1,4 +1,34 @@
 @import "variable";
+
+%show-more-about-gifts{
+  margin-top: -5px;
+
+  width: 270px;
+  height: 166px;
+
+  box-shadow: 10px 0 10px 0 $mainGreyColor;
+
+  text-align: start;
+
+  .block-with-text{
+    padding: 24px 0 0 24px;
+    span{
+
+      font-size: 20px;
+      font-family: $GilroyFont;
+      line-height: 24px;
+    }
+    p{
+      padding-top: 74px;
+      font-size: 14px;
+      font-family: Roboto;
+      font-weight: 400;
+
+      line-height: 19px;
+    }
+  }
+}
+
 .first-block-with-girlfriend{
   display: flex;
   justify-content: space-between;
@@ -14,7 +44,7 @@
 
     h1{
       font-size: 56px;
-      font-family: $mainFont;
+      font-family: $GilroyFont;
 
       line-height: 69px;
     }
@@ -22,7 +52,7 @@
       width: 422px;
 
       font-size: 20px;
-      font-family: $mainFont;
+      font-family: $GilroyFont;
 
       line-height: 28px;
 
@@ -40,7 +70,7 @@
       border: none;
 
       font-size: 18px;
-      font-family: $mainFont;
+      font-family: $GilroyFont;
 
       line-height: 22px;
     }
@@ -62,13 +92,13 @@
 
     span{
       font-size: 32px;
-      font-family: $mainFont;
+      font-family: $GilroyFont;
 
       line-height: 45px;
     }
     p{
       font-size: 20px;
-      font-family: $mainFont;
+      font-family: $GilroyFont;
 
       padding-top: 23px;
 
@@ -84,11 +114,65 @@
       border-radius: 5px;
 
       font-size: 18px;
-      font-family: $mainFont;
+      font-family: $GilroyFont;
 
       line-height: 24px;
 
       color: $orangeColor;
+    }
+  }
+}
+.gifts-for-all-occasions{
+  .gifts-title{
+    padding-top: 96px;
+
+    span{
+      font-size: 32px;
+      font-family: $GilroyFont;
+
+      line-height: 38px;
+    }
+  }
+  .gifts-text{
+    padding-top: 23px;
+    p{
+      font-size: 18px;
+      font-family: $GilroyFont;
+
+      line-height: 24px;
+    }
+  }
+  .gifts-images{
+    padding-top: 64px;
+
+    display: flex;
+    justify-content: space-evenly;
+
+    .gifts-on-birthday{
+      .show-more-about-gifts{
+        @extend %show-more-about-gifts;
+      }
+    }
+    .gifts-on-anniversary{
+      .show-more-about-gifts{
+        @extend %show-more-about-gifts;
+        background: $mainGreyColor;
+        box-shadow: none;
+      }
+    }
+    .gifts-on-valentines-day{
+      .show-more-about-gifts{
+        @extend %show-more-about-gifts;
+        background: $mainGreyColor;
+        box-shadow: none;
+      }
+    }
+    .gifts-on-christmas{
+      .show-more-about-gifts{
+        @extend %show-more-about-gifts;
+        background: $mainGreyColor;
+        box-shadow: none;
+      }
     }
   }
 }
