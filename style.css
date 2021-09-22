@@ -86,7 +86,8 @@ ul, li {
   margin-top: -5px;
   width: 270px;
   height: 166px;
-  box-shadow: 10px 0 10px 0 #FAFAFA;
+  background: #FAFAFA;
+  box-shadow: none;
   text-align: start;
 }
 .gifts-for-all-occasions .gifts-images .gifts-on-christmas .show-more-about-gifts .block-with-text, .gifts-for-all-occasions .gifts-images .gifts-on-valentines-day .show-more-about-gifts .block-with-text, .gifts-for-all-occasions .gifts-images .gifts-on-anniversary .show-more-about-gifts .block-with-text, .gifts-for-all-occasions .gifts-images .gifts-on-birthday .show-more-about-gifts .block-with-text {
@@ -194,17 +195,21 @@ ul, li {
   display: flex;
   justify-content: space-evenly;
 }
-.gifts-for-all-occasions .gifts-images .gifts-on-anniversary .show-more-about-gifts {
-  background: #FAFAFA;
-  box-shadow: none;
+.gifts-for-all-occasions .gifts-images .gifts-on-birthday .show-more-about-gifts:hover {
+  background: white;
+  box-shadow: 0 0 20px #F1F1F2;
 }
-.gifts-for-all-occasions .gifts-images .gifts-on-valentines-day .show-more-about-gifts {
-  background: #FAFAFA;
-  box-shadow: none;
+.gifts-for-all-occasions .gifts-images .gifts-on-anniversary .show-more-about-gifts:hover {
+  background: white;
+  box-shadow: 0 0 20px #F1F1F2;
 }
-.gifts-for-all-occasions .gifts-images .gifts-on-christmas .show-more-about-gifts {
-  background: #FAFAFA;
-  box-shadow: none;
+.gifts-for-all-occasions .gifts-images .gifts-on-valentines-day .show-more-about-gifts:hover {
+  background: white;
+  box-shadow: 0 0 20px #F1F1F2;
+}
+.gifts-for-all-occasions .gifts-images .gifts-on-christmas .show-more-about-gifts:hover {
+  background: white;
+  box-shadow: 0 0 20px #F1F1F2;
 }
 
 .register-block {
@@ -249,6 +254,94 @@ ul, li {
   font-size: 18px;
   font-family: Gilroy, sans-serif;
   line-height: 25px;
+}
+
+.best-blogs-ever .best-blogs-text {
+  padding-top: 88px;
+}
+.best-blogs-ever .best-blogs-text span {
+  font-size: 32px;
+  font-family: Gilroy, sans-serif;
+  line-height: 38px;
+}
+.best-blogs-ever .best-blogs-text p {
+  padding-top: 23px;
+  font-size: 18px;
+  font-family: Gilroy, sans-serif;
+  line-height: 24px;
+}
+.best-blogs-ever .best-way-block {
+  width: 1170px;
+  height: 370px;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 71px;
+  background: #231F20;
+}
+.best-blogs-ever .best-way-block .best-way-text {
+  text-align: start;
+  padding: 63px 0 0 78px;
+}
+.best-blogs-ever .best-way-block .best-way-text span {
+  font-size: 14px;
+  font-family: Gilroy, sans-serif;
+  line-height: 20px;
+  color: white;
+}
+.best-blogs-ever .best-way-block .best-way-text p {
+  width: 492px;
+  padding-top: 27px;
+  font-size: 48px;
+  font-family: Gilroy, sans-serif;
+  line-height: 58px;
+  color: white;
+}
+.best-blogs-ever .best-way-block .best-way-text li {
+  padding-top: 60px;
+}
+.best-blogs-ever .best-way-block .best-way-text li a {
+  font-size: 18px;
+  font-family: Gilroy, sans-serif;
+  line-height: 25px;
+  color: white;
+}
+.best-blogs-ever .block-with-more-info {
+  width: 1170px;
+  margin: 0 auto;
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.best-blogs-ever .block-with-more-info .find-gifts-for-your-girl {
+  width: 570px;
+  height: 290px;
+  text-align: start;
+}
+.best-blogs-ever .block-with-more-info .find-gifts-for-your-girl .find-gifts-text {
+  padding: 48px 48px 0 48px;
+}
+.best-blogs-ever .block-with-more-info .find-gifts-for-your-girl .find-gifts-text h3 {
+  font-size: 24px;
+  font-family: Gilroy, sans-serif;
+  line-height: 24px;
+}
+.best-blogs-ever .block-with-more-info .find-gifts-for-your-girl .find-gifts-text p {
+  padding-top: 16px;
+  font-size: 18px;
+  font-family: Gilroy, sans-serif;
+  line-height: 25px;
+}
+.best-blogs-ever .block-with-more-info .find-gifts-for-your-girl .find-gifts-text li {
+  padding-top: 26px;
+}
+.best-blogs-ever .block-with-more-info .find-gifts-for-your-girl .find-gifts-text li a {
+  font-size: 14px;
+  font-family: Gilroy, sans-serif;
+  line-height: 20px;
+  color: black;
+}
+.best-blogs-ever .block-with-more-info .find-gifts-for-your-girl:hover {
+  box-shadow: 0 0 20px #F1F1F2;
 }
 
 @font-face {
