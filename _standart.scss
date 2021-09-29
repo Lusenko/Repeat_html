@@ -4,6 +4,7 @@ body {
 }
 
 div, p, a, img, form, button {
+  height: 100%;
   box-sizing: border-box;
   margin: 0;
 }
@@ -21,4 +22,19 @@ ul, li {
   display: block;
   padding: 0;
   margin: 0;
+}
+.wrapper{
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.container{
+  max-width: 1440px;
+
+  margin: 0 auto;
+  text-align: center;
+
+  padding: 0 30px;
+  box-sizing: content-box;
 }

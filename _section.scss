@@ -29,51 +29,56 @@
     }
   }
 }
+/**************Page__Gift**********************/
+.gift-body{
+  .body-section{
+    display: flex;
+    justify-content: space-between;
 
-.first-block-with-girlfriend{
-  display: flex;
-  justify-content: space-between;
+    background: $greyColor;
 
-  background: $greyColor;
+    .body-section__column{
 
-  .block-with-title{
-    width: 433px;
-    text-align: start;
+      .body-section__item{
 
-    margin: 0 auto;
-    padding-top: 154px;
+        padding: 154px 126px 135px 162px;
+        text-align: start;
 
-    h1{
-      font-size: 56px;
-      font-family: $GilroyFont;
+        .body-section__title{
+          font-size: 56px;
+          font-family: $GilroyFont;
 
-      line-height: 69px;
-    }
-    p{
-      width: 422px;
+          line-height:calc(69 / 56 * 100%);
 
-      font-size: 20px;
-      font-family: $GilroyFont;
+          padding: 0 0 36px 0;
 
-      line-height: 28px;
+        }
+        .body-section__text{
+          width: 422px;
 
-      padding-top: 46px;
-    }
-    button{
-      width: 200px;
-      height: 60px;
+          font-size: 20px;
+          font-family: $GilroyFont;
 
-      margin-top: 75px;
+          line-height: 28px;
 
-      background: $orangeColor;
+          padding: 0 0 52px 0;
+        }
+        .body-section__button{
+          background: $orangeColor;
 
-      border-radius: 5px;
-      border: none;
+          border-radius: 5px;
+          border: none;
 
-      font-size: 18px;
-      font-family: $GilroyFont;
+          font-size: 18px;
+          font-family: $GilroyFont;
 
-      line-height: 22px;
+          line-height: calc(22 / 18 * 100%);
+
+          color: white;
+
+          padding: 23px 25px;
+        }
+      }
     }
   }
 }

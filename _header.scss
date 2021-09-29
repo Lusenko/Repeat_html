@@ -1,24 +1,16 @@
 @import "variable";
 /*HEADER*/
-.container{
-  width: 1440px;
-
-  margin: 0 auto;
-  text-align: center;
-}
-.header-menu {
+.header-body {
   width: 100%;
-  height: 116px;
-
   background: $mainGreyColor;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  .text-logo {
+  .header-text-logo {
 
-    p{
+    .text-logo{
       font-size: 18px;
       font-family: Homemade Apple;
       font-weight: 400;
@@ -29,12 +21,16 @@
     }
   }
 
-  .menu-with-link{
+  .header-menu-link{
     margin: 0 auto;
     text-align: center;
 
     .menu-link{
       display: flex;
+
+      & > *:not(:last-child){
+        padding: 0 31px 0 0;
+      }
 
       .nav-link{
         font-size: 18px;
@@ -45,9 +41,6 @@
 
         color: black;
 
-      }
-      .link{
-        padding-right: 31px;
       }
     }
   }

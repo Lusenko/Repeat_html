@@ -4,6 +4,7 @@ body {
 }
 
 div, p, a, img, form, button {
+  height: 100%;
   box-sizing: border-box;
   margin: 0;
 }
@@ -23,50 +24,58 @@ ul, li {
   margin: 0;
 }
 
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 30px;
+  box-sizing: content-box;
+}
+
 @font-face {
   font-family: Gilroy;
   src: url("/Gilroy-FREE");
 }
 /*HEADER*/
-.container {
-  width: 1440px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.header-menu {
+.header-body {
   width: 100%;
-  height: 116px;
   background: #FAFAFA;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.header-menu .text-logo p {
+.header-body .header-text-logo .text-logo {
   font-size: 18px;
   font-family: Homemade Apple;
   font-weight: 400;
   line-height: 38px;
   padding: 39px 80px;
 }
-.header-menu .menu-with-link {
+.header-body .header-menu-link {
   margin: 0 auto;
   text-align: center;
 }
-.header-menu .menu-with-link .menu-link {
+.header-body .header-menu-link .menu-link {
   display: flex;
 }
-.header-menu .menu-with-link .menu-link .nav-link {
+.header-body .header-menu-link .menu-link > *:not(:last-child) {
+  padding: 0 31px 0 0;
+}
+.header-body .header-menu-link .menu-link .nav-link {
   font-size: 18px;
   line-height: 22px;
   font-family: Gilroy, sans-serif;
   text-decoration: none;
   color: black;
 }
-.header-menu .menu-with-link .menu-link .link {
-  padding-right: 31px;
-}
-.header-menu .button-in-menu {
+.header-body .button-in-menu {
   width: 150px;
   height: 43px;
   margin: 36px 34px 35px;
@@ -106,39 +115,38 @@ ul, li {
   line-height: 19px;
 }
 
-.first-block-with-girlfriend {
+/**************Page__Gift**********************/
+.gift-body .body-section {
   display: flex;
   justify-content: space-between;
   background: #F1F1F2;
 }
-.first-block-with-girlfriend .block-with-title {
-  width: 433px;
+.gift-body .body-section .body-section__column .body-section__item {
+  padding: 154px 126px 135px 162px;
   text-align: start;
-  margin: 0 auto;
-  padding-top: 154px;
 }
-.first-block-with-girlfriend .block-with-title h1 {
+.gift-body .body-section .body-section__column .body-section__item .body-section__title {
   font-size: 56px;
   font-family: Gilroy, sans-serif;
-  line-height: 69px;
+  line-height: 123.2142857143%;
+  padding: 0 0 36px 0;
 }
-.first-block-with-girlfriend .block-with-title p {
+.gift-body .body-section .body-section__column .body-section__item .body-section__text {
   width: 422px;
   font-size: 20px;
   font-family: Gilroy, sans-serif;
   line-height: 28px;
-  padding-top: 46px;
+  padding: 0 0 52px 0;
 }
-.first-block-with-girlfriend .block-with-title button {
-  width: 200px;
-  height: 60px;
-  margin-top: 75px;
+.gift-body .body-section .body-section__column .body-section__item .body-section__button {
   background: #F7941E;
   border-radius: 5px;
   border: none;
   font-size: 18px;
   font-family: Gilroy, sans-serif;
-  line-height: 22px;
+  line-height: 122.2222222222%;
+  color: white;
+  padding: 23px 25px;
 }
 
 .second-block-with-girlfriend {
