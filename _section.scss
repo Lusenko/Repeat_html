@@ -41,7 +41,7 @@
 
       .body-section__item{
 
-        padding: 154px 126px 135px 162px;
+        padding: 154px 126px 127px 162px;
         text-align: start;
 
         .body-section__title{
@@ -80,51 +80,57 @@
         }
       }
     }
+    .body-section__img{
+      display: flex;
+    }
   }
 }
-.second-block-with-girlfriend{
+
+.c-body-section{
   display: flex;
 
   background: $greyColor;
 
-  .block-with-title{
-    width: 441px;
+  .c-body-section__img{
+    display: flex;
+  }
 
-    margin: 0 auto;
-    padding-top: 164px;
-
+  .c-body-section__column{
     text-align: start;
 
+    .c-body-section__item{
 
-    span{
-      font-size: 32px;
-      font-family: $GilroyFont;
+      padding: 151px 166px 104px 102px;
 
-      line-height: 45px;
-    }
-    p{
-      font-size: 20px;
-      font-family: $GilroyFont;
+      .c-body-section__title{
+        font-size: 32px;
+        font-family: $GilroyFont;
 
-      padding-top: 23px;
+        line-height: calc(45 / 32 * 100%);
 
-      line-height: 28px;
-    }
-    button{
-      width: 200px;
-      height: 60px;
+        margin: 0 0 23px 0;
+      }
+      .c-body-section__text{
+        font-size: 20px;
+        font-family: $GilroyFont;
 
-      margin-top: 35px;
+        margin: 0 12px 35px 0;
+        text-align: justify;
+        line-height: 28px;
+      }
+      .c-body-section__button{
+        border: 1px solid $orangeColor;
+        border-radius: 5px;
 
-      border: 1px solid $orangeColor;
-      border-radius: 5px;
+        font-size: 18px;
+        font-family: $GilroyFont;
 
-      font-size: 18px;
-      font-family: $GilroyFont;
+        padding: 24px 46px;
 
-      line-height: 24px;
+        line-height: calc(24 / 18 * 100%);
 
-      color: $orangeColor;
+        color: $orangeColor;
+      }
     }
   }
 }
