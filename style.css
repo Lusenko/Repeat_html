@@ -91,30 +91,6 @@ ul, li {
   font-family: Gilroy;
   src: url("/Gilroy-FREE");
 }
-.gifts-for-all-occasions .gifts-images .gifts-on-christmas .show-more-about-gifts, .gifts-for-all-occasions .gifts-images .gifts-on-valentines-day .show-more-about-gifts, .gifts-for-all-occasions .gifts-images .gifts-on-anniversary .show-more-about-gifts, .gifts-for-all-occasions .gifts-images .gifts-on-birthday .show-more-about-gifts {
-  margin-top: -5px;
-  width: 270px;
-  height: 166px;
-  background: #FAFAFA;
-  box-shadow: none;
-  text-align: start;
-}
-.gifts-for-all-occasions .gifts-images .gifts-on-christmas .show-more-about-gifts .block-with-text, .gifts-for-all-occasions .gifts-images .gifts-on-valentines-day .show-more-about-gifts .block-with-text, .gifts-for-all-occasions .gifts-images .gifts-on-anniversary .show-more-about-gifts .block-with-text, .gifts-for-all-occasions .gifts-images .gifts-on-birthday .show-more-about-gifts .block-with-text {
-  padding: 24px 0 0 24px;
-}
-.gifts-for-all-occasions .gifts-images .gifts-on-christmas .show-more-about-gifts .block-with-text span, .gifts-for-all-occasions .gifts-images .gifts-on-valentines-day .show-more-about-gifts .block-with-text span, .gifts-for-all-occasions .gifts-images .gifts-on-anniversary .show-more-about-gifts .block-with-text span, .gifts-for-all-occasions .gifts-images .gifts-on-birthday .show-more-about-gifts .block-with-text span {
-  font-size: 20px;
-  font-family: Gilroy, sans-serif;
-  line-height: 24px;
-}
-.gifts-for-all-occasions .gifts-images .gifts-on-christmas .show-more-about-gifts .block-with-text p, .gifts-for-all-occasions .gifts-images .gifts-on-valentines-day .show-more-about-gifts .block-with-text p, .gifts-for-all-occasions .gifts-images .gifts-on-anniversary .show-more-about-gifts .block-with-text p, .gifts-for-all-occasions .gifts-images .gifts-on-birthday .show-more-about-gifts .block-with-text p {
-  padding-top: 74px;
-  font-size: 14px;
-  font-family: Roboto;
-  font-weight: 400;
-  line-height: 19px;
-}
-
 /**************Page__Gift**********************/
 .gift-body .body-section {
   display: flex;
@@ -188,40 +164,51 @@ ul, li {
   color: #F7941E;
 }
 
-.gifts-for-all-occasions .gifts-title {
-  padding-top: 96px;
+/***************Occasion******************/
+.occasions-body .occasion-header {
+  padding: 96px 0 64px 0;
 }
-.gifts-for-all-occasions .gifts-title span {
+.occasions-body .occasion-header .occasion__title {
   font-size: 32px;
   font-family: Gilroy, sans-serif;
-  line-height: 38px;
+  line-height: 118.75%;
+  padding: 0 0 23px 0;
 }
-.gifts-for-all-occasions .gifts-text {
-  padding-top: 23px;
-}
-.gifts-for-all-occasions .gifts-text p {
+.occasions-body .occasion__text {
   font-size: 18px;
   font-family: Gilroy, sans-serif;
-  line-height: 24px;
+  line-height: 133.3333333333%;
 }
-.gifts-for-all-occasions .gifts-images {
-  padding-top: 64px;
+.occasions-body .occasion-images {
   display: flex;
   justify-content: space-evenly;
 }
-.gifts-for-all-occasions .gifts-images .gifts-on-birthday .show-more-about-gifts:hover {
-  background: white;
-  box-shadow: 0 0 20px #F1F1F2;
+.occasions-body .occasion-images .occasion-column .occasion__img {
+  display: flex;
 }
-.gifts-for-all-occasions .gifts-images .gifts-on-anniversary .show-more-about-gifts:hover {
-  background: white;
-  box-shadow: 0 0 20px #F1F1F2;
+.occasions-body .occasion-images .occasion-column .occasion-info {
+  background: #FAFAFA;
+  box-shadow: none;
+  text-align: start;
 }
-.gifts-for-all-occasions .gifts-images .gifts-on-valentines-day .show-more-about-gifts:hover {
-  background: white;
-  box-shadow: 0 0 20px #F1F1F2;
+.occasions-body .occasion-images .occasion-column .occasion-info .occasion__link {
+  padding: 24px 0 24px 24px;
 }
-.gifts-for-all-occasions .gifts-images .gifts-on-christmas .show-more-about-gifts:hover {
+.occasions-body .occasion-images .occasion-column .occasion-info .occasion__link .occasion__text {
+  font-size: 20px;
+  font-family: Gilroy, sans-serif;
+  line-height: 120%;
+  padding: 0 0 74px 0;
+}
+.occasions-body .occasion-images .occasion-column .occasion-info .occasion__link .occasion-link {
+  padding-top: 74px;
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 135.7142857143%;
+  color: black;
+}
+.occasions-body .occasion-images .occasion-column .occasion-info:hover {
   background: white;
   box-shadow: 0 0 20px #F1F1F2;
 }

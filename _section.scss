@@ -1,34 +1,4 @@
 @import "variable";
-
-%show-more-about-gifts{
-  margin-top: -5px;
-
-  width: 270px;
-  height: 166px;
-
-  background: $mainGreyColor;
-  box-shadow: none;
-
-  text-align: start;
-
-  .block-with-text{
-    padding: 24px 0 0 24px;
-    span{
-
-      font-size: 20px;
-      font-family: $GilroyFont;
-      line-height: 24px;
-    }
-    p{
-      padding-top: 74px;
-      font-size: 14px;
-      font-family: Roboto;
-      font-weight: 400;
-
-      line-height: 19px;
-    }
-  }
-}
 /**************Page__Gift**********************/
 .gift-body{
   .body-section{
@@ -134,64 +104,66 @@
     }
   }
 }
-.gifts-for-all-occasions{
-  .gifts-title{
-    padding-top: 96px;
+/***************Occasion******************/
 
-    span{
+.occasions-body{
+  .occasion-header{
+    padding: 96px 0 64px 0;
+
+    .occasion__title{
       font-size: 32px;
       font-family: $GilroyFont;
 
-      line-height: 38px;
-    }
-  }
-  .gifts-text{
-    padding-top: 23px;
-    p{
-      font-size: 18px;
-      font-family: $GilroyFont;
+      line-height: calc(38 / 32 * 100%);
 
-      line-height: 24px;
+      padding: 0 0 23px 0;
     }
   }
-  .gifts-images{
-    padding-top: 64px;
+  .occasion__text{
+    font-size: 18px;
+    font-family: $GilroyFont;
+
+    line-height: calc(24 / 18 * 100%);
+  }
+  .occasion-images{
 
     display: flex;
     justify-content: space-evenly;
 
-    .gifts-on-birthday{
-      .show-more-about-gifts{
-        @extend %show-more-about-gifts;
+    .occasion-column{
+
+      .occasion__img{
+        display: flex;
       }
-      .show-more-about-gifts:hover{
-        background: white;
-        box-shadow: 0 0 20px $greyColor;
+      .occasion-info{
+        background: $mainGreyColor;
+        box-shadow: none;
+
+        text-align: start;
+
+        .occasion__link{
+          padding: 24px 0 24px 24px;
+          .occasion__text{
+
+            font-size: 20px;
+            font-family: $GilroyFont;
+            line-height: (24 / 20 * 100%);
+
+            padding: 0 0 74px 0;
+          }
+          .occasion-link{
+            padding-top: 74px;
+            font-size: 14px;
+            font-family: Roboto;
+            font-weight: 400;
+
+            line-height: calc(19 / 14 * 100%);
+
+            color: black;
+          }
+        }
       }
-    }
-    .gifts-on-anniversary{
-      .show-more-about-gifts{
-        @extend %show-more-about-gifts;
-      }
-      .show-more-about-gifts:hover{
-        background: white;
-        box-shadow: 0 0 20px $greyColor;
-      }
-    }
-    .gifts-on-valentines-day{
-      .show-more-about-gifts{
-        @extend %show-more-about-gifts;
-      }
-      .show-more-about-gifts:hover{
-        background: white;
-        box-shadow: 0 0 20px $greyColor;
-      }
-    }
-    .gifts-on-christmas{
-      .show-more-about-gifts{
-        @extend %show-more-about-gifts;
-      }
-      .show-more-about-gifts:hover{
+      .occasion-info:hover{
         background: white;
         box-shadow: 0 0 20px $greyColor;
       }
