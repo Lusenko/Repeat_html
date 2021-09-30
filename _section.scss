@@ -170,68 +170,66 @@
     }
   }
 }
+/*************Support****************/
+.page__support{
+  padding: 137px 0 0 0;
+  .support__body{
+    display: flex;
 
-.register-block{
-  margin-top: 137px;
-  height: 240px;
+    background: $orangeColor;
 
-  display: flex;
+    justify-content: space-evenly;
 
-  background: $orangeColor;
+    align-items: center;
 
-  justify-content: space-evenly;
+    .support-item{
+      text-align: start;
 
-  align-items: center;
+      padding: 75px 0;
 
-  .block-with-title{
-    text-align: start;
-    h1{
-      font-size: 32px;
-      font-family: $GilroyFont;
+      .support__title{
+        font-size: 32px;
+        font-family: $GilroyFont;
 
-      line-height: 45px;
+        line-height: calc(45 / 32 * 100%);
+      }
+      .support__text{
+        font-size: 32px;
+        font-family: $GilroyFont;
+
+        line-height: calc(45 / 32 * 100%);
+      }
     }
-    span{
-      font-size: 32px;
-      font-family: $GilroyFont;
+    .support__buttons{
+      display: flex;
+      & > *:not(:last-child){
+        margin: 0 16px 0 0;
+      }
+      .support-button{
 
-      line-height: 45px;
-    }
-  }
-  .register-button{
-    .find-gift-button{
-      margin-right: 16px;
+        padding: 14px 24px;
+        border-radius: 5px;
+        border: none;
 
-      width: 200px;
-      height: 50px;
+        background: #231F20;
+        color: white;
 
-      border-radius: 5px;
-      border: none;
+        font-size: 18px;
+        font-family: $GilroyFont;
 
-      background: #231F20;
-      color: white;
-
-      font-size: 18px;
-      font-family: $GilroyFont;
-
-      line-height: 22px;
-    }
-    .info-button{
-      width: 200px;
-      height: 50px;
-
-      border-radius: 5px;
-      border: 1px solid #000;
-
-      background: $orangeColor;
-
-      font-size: 18px;
-      font-family: $GilroyFont;
-
-      line-height: 25px;
+        line-height: 22px;
+      }
+      .border{
+        padding: 13.5px 24px;
+        background: $orangeColor;
+        border: 1px solid black;
+        color: black;
+      }
     }
   }
+
 }
+/*********************************/
 .best-blogs-ever{
   .best-blogs-text{
     padding-top: 88px;
