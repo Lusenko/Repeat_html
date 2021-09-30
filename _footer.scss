@@ -1,67 +1,68 @@
 @import "variable";
-.footer-background{
-
-  height: 410px;
+.footer{
   background: $mainGreyColor;
-
-  .block-with-link{
-    width: 1000px;
-
-    margin: 0 auto;
-    padding-top: 106px;
-
-    display: flex;
-
-    justify-content: space-evenly;
-    p{
-      font-size: 18px;
-      font-family: Homemade Apple;
-      font-weight: 400;
-
-      line-height: 39px;
-
-      color: $orangeColor;
-    }
-    ul{
+  .footer__body{
+    padding: 106px 0 35px 0;
+    .footer__links{
       display: flex;
-      li{
-        font-size: 14px;
-        font-family: $GilroyFont;
 
-        line-height: 20px;
+      justify-content: space-between;
 
-        a{
-          color: black;
+      margin: 0 406px;
+      .footer__link{
+        display: flex;
+
+        & > *:not(:last-child){
+          margin: 0 81px 0 0;
         }
-        .link{
-          padding-right: 81px;
+
+        li{
+          .link{
+            font-size: 14px;
+            font-weight: bold;
+            font-family: $GilroyFont;
+            line-height: calc(20 / 14 * 100%);
+
+            color: black;
+          }
         }
       }
+      .footer__logo{
+        font-size: 18px;
+        font-weight: 400;
+
+        line-height: calc(38 / 18 * 100%);
+
+        color: $orangeColor;
+
+        font-family: Homemade Apple;
+      }
     }
-  }
-  .footer-line{
-    width: 1000px;
-    border: .1px solid black;
-
-    margin: 0 auto;
-    margin-top: 43px;
-  }
-  .website-link{
-    img{
-      padding: 55px 25px 0 0;
+    .footer__line{
+      margin: 43px 220px 0 220px;
+      border: .1px solid black;
     }
-  }
-  .private-terms{
-    display: flex;
-    justify-content: center;
+    .footer-website__link{
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-    margin-top: 72px;
-    span{
-      font-size: 14px;
-      font-family: $GilroyFont;
+      padding: 55.8px 0 0 0;
 
-      line-height: 20px;
-      padding-right: 14px;
+      & > *:not(:last-child){
+        margin: 0 25.6px 0 0;
+      }
+    }
+    .footer__date{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 72.8px 0 0 0;
+
+      & > *:not(:last-child){
+        margin: 0 14px 0 0;
+      }
     }
   }
 }

@@ -352,57 +352,58 @@ ul, li {
   font-family: Gilroy;
   src: url("/Gilroy-FREE");
 }
-.footer-background {
-  height: 410px;
+.footer {
   background: #FAFAFA;
 }
-.footer-background .block-with-link {
-  width: 1000px;
-  margin: 0 auto;
-  padding-top: 106px;
+.footer .footer__body {
+  padding: 106px 0 35px 0;
+}
+.footer .footer__body .footer__links {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  margin: 0 406px;
 }
-.footer-background .block-with-link p {
-  font-size: 18px;
-  font-family: Homemade Apple;
-  font-weight: 400;
-  line-height: 39px;
-  color: #F7941E;
-}
-.footer-background .block-with-link ul {
+.footer .footer__body .footer__links .footer__link {
   display: flex;
 }
-.footer-background .block-with-link ul li {
+.footer .footer__body .footer__links .footer__link > *:not(:last-child) {
+  margin: 0 81px 0 0;
+}
+.footer .footer__body .footer__links .footer__link li .link {
   font-size: 14px;
+  font-weight: bold;
   font-family: Gilroy, sans-serif;
-  line-height: 20px;
-}
-.footer-background .block-with-link ul li a {
+  line-height: 142.8571428571%;
   color: black;
 }
-.footer-background .block-with-link ul li .link {
-  padding-right: 81px;
+.footer .footer__body .footer__links .footer__logo {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 211.1111111111%;
+  color: #F7941E;
+  font-family: Homemade Apple;
 }
-.footer-background .footer-line {
-  width: 1000px;
+.footer .footer__body .footer__line {
+  margin: 43px 220px 0 220px;
   border: 0.1px solid black;
-  margin: 0 auto;
-  margin-top: 43px;
 }
-.footer-background .website-link img {
-  padding: 55px 25px 0 0;
-}
-.footer-background .private-terms {
+.footer .footer__body .footer-website__link {
   display: flex;
+  align-items: center;
   justify-content: center;
-  margin-top: 72px;
+  padding: 55.8px 0 0 0;
 }
-.footer-background .private-terms span {
-  font-size: 14px;
-  font-family: Gilroy, sans-serif;
-  line-height: 20px;
-  padding-right: 14px;
+.footer .footer__body .footer-website__link > *:not(:last-child) {
+  margin: 0 25.6px 0 0;
+}
+.footer .footer__body .footer__date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 72.8px 0 0 0;
+}
+.footer .footer__body .footer__date > *:not(:last-child) {
+  margin: 0 14px 0 0;
 }
 
 @font-face {
