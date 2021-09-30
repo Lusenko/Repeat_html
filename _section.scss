@@ -229,89 +229,91 @@
   }
 
 }
-/*********************************/
-.best-blogs-ever{
-  .best-blogs-text{
-    padding-top: 88px;
-    span{
+/***************Blogs******************/
+.blogs__body{
+
+  .blogs__header{
+    padding: 88px 0 0 0;
+
+    & > *:not(:last-child){
+      padding: 0 0 23px 0;
+    }
+    .blogs__title{
       font-size: 32px;
       font-family: $GilroyFont;
 
-      line-height: 38px;
+      line-height: calc(38 / 32 * 100%);
     }
-    p{
-      padding-top: 23px;
+    .blogs__text{
       font-size: 18px;
       font-family: $GilroyFont;
 
-      line-height: 24px;
+      line-height: calc(24 / 23 * 100%);
     }
   }
-  .best-way-block{
-    width: 1170px;
-    height: 370px;
+  .blogs__section{
     display: flex;
 
-    margin: 0 auto;
-    margin-top: 71px;
+    margin: 71px 135px 0 135px;
     background: #231F20;
 
+    .blogs__img{
+      display: flex;
+    }
 
-    .best-way-text{
+    .blogs-info{
       text-align: start;
 
-      padding: 63px 0 0 78px;
-      span{
+      padding: 63px 200px 0 78px;
+      .blogs-name__text{
+        padding: 0 0 27px 0;
+
         font-size: 14px;
         font-family: $GilroyFont;
 
-        line-height: 20px;
+        line-height: calc(20 / 14 * 100%);
 
         color: white;
       }
-      p{
-        width: 492px;
-
-        padding-top: 27px;
+      .blogs__text{
+        padding: 0 0 60px 0;
 
         font-size: 48px;
         font-family: $GilroyFont;
 
-        line-height: 58px;
+        line-height: calc(58 / 48 * 100%);
 
         color: white;
       }
-      li{
-        padding-top: 60px;
-        a{
+      .blogs__link{
+        font-size: 18px;
+        font-family: $GilroyFont;
 
-          font-size: 18px;
-          font-family: $GilroyFont;
+        line-height: calc(25 / 18 * 100%);
 
-          line-height: 25px;
-
-          color: white;
+        color: white;
         }
       }
     }
   }
   .block-with-more-info{
-
-    width: 1170px;
-
-    margin: 0 auto;
-    padding-top: 40px;
+    margin: 40px 135px 80px 135px;
     display: flex;
     justify-content: space-between;
 
     .find-gifts-for-your-girl{
-      width: 570px;
-      height: 290px;
-
+      display: flex;
+      flex-direction: column;
+      flex: 0 1 48.8%;
       text-align: start;
 
       .find-gifts-text{
-        padding: 48px 48px 0 48px;
+        padding: 48px 51px 50px 48px;
+
+        & > *:not(:last-child){
+          margin: 0 0 16px 0;
+        }
+
         h3{
           font-size: 24px;
           font-family: $GilroyFont;
@@ -326,16 +328,13 @@
 
           line-height: 25px;
         }
-        li{
-          padding-top: 26px;
-          a{
+        a{
             font-size: 14px;
             font-family: $GilroyFont;
 
             line-height: 20px;
 
             color: black;
-          }
         }
       }
     }
@@ -343,5 +342,3 @@
       box-shadow: 0 0 20px $greyColor;
     }
   }
-}
-

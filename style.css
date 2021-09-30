@@ -260,92 +260,91 @@ ul, li {
   color: black;
 }
 
-/*********************************/
-.best-blogs-ever .best-blogs-text {
-  padding-top: 88px;
+/***************Blogs******************/
+.blogs__body .blogs__header {
+  padding: 88px 0 0 0;
 }
-.best-blogs-ever .best-blogs-text span {
+.blogs__body .blogs__header > *:not(:last-child) {
+  padding: 0 0 23px 0;
+}
+.blogs__body .blogs__header .blogs__title {
   font-size: 32px;
   font-family: Gilroy, sans-serif;
-  line-height: 38px;
+  line-height: 118.75%;
 }
-.best-blogs-ever .best-blogs-text p {
-  padding-top: 23px;
+.blogs__body .blogs__header .blogs__text {
   font-size: 18px;
   font-family: Gilroy, sans-serif;
-  line-height: 24px;
+  line-height: 104.347826087%;
 }
-.best-blogs-ever .best-way-block {
-  width: 1170px;
-  height: 370px;
+.blogs__body .blogs__section {
   display: flex;
-  margin: 0 auto;
-  margin-top: 71px;
+  margin: 71px 135px 0 135px;
   background: #231F20;
 }
-.best-blogs-ever .best-way-block .best-way-text {
-  text-align: start;
-  padding: 63px 0 0 78px;
+.blogs__body .blogs__section .blogs__img {
+  display: flex;
 }
-.best-blogs-ever .best-way-block .best-way-text span {
+.blogs__body .blogs__section .blogs-info {
+  text-align: start;
+  padding: 63px 200px 0 78px;
+}
+.blogs__body .blogs__section .blogs-info .blogs-name__text {
+  padding: 0 0 27px 0;
   font-size: 14px;
   font-family: Gilroy, sans-serif;
-  line-height: 20px;
+  line-height: 142.8571428571%;
   color: white;
 }
-.best-blogs-ever .best-way-block .best-way-text p {
-  width: 492px;
-  padding-top: 27px;
+.blogs__body .blogs__section .blogs-info .blogs__text {
+  padding: 0 0 60px 0;
   font-size: 48px;
   font-family: Gilroy, sans-serif;
-  line-height: 58px;
+  line-height: 120.8333333333%;
   color: white;
 }
-.best-blogs-ever .best-way-block .best-way-text li {
-  padding-top: 60px;
-}
-.best-blogs-ever .best-way-block .best-way-text li a {
+.blogs__body .blogs__section .blogs-info .blogs__link {
   font-size: 18px;
   font-family: Gilroy, sans-serif;
-  line-height: 25px;
+  line-height: 138.8888888889%;
   color: white;
 }
-.best-blogs-ever .block-with-more-info {
-  width: 1170px;
-  margin: 0 auto;
-  padding-top: 40px;
+
+.block-with-more-info {
+  margin: 40px 135px 80px 135px;
   display: flex;
   justify-content: space-between;
 }
-.best-blogs-ever .block-with-more-info .find-gifts-for-your-girl {
-  width: 570px;
-  height: 290px;
+.block-with-more-info .find-gifts-for-your-girl {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 48.8%;
   text-align: start;
 }
-.best-blogs-ever .block-with-more-info .find-gifts-for-your-girl .find-gifts-text {
-  padding: 48px 48px 0 48px;
+.block-with-more-info .find-gifts-for-your-girl .find-gifts-text {
+  padding: 48px 51px 50px 48px;
 }
-.best-blogs-ever .block-with-more-info .find-gifts-for-your-girl .find-gifts-text h3 {
+.block-with-more-info .find-gifts-for-your-girl .find-gifts-text > *:not(:last-child) {
+  margin: 0 0 16px 0;
+}
+.block-with-more-info .find-gifts-for-your-girl .find-gifts-text h3 {
   font-size: 24px;
   font-family: Gilroy, sans-serif;
   line-height: 24px;
 }
-.best-blogs-ever .block-with-more-info .find-gifts-for-your-girl .find-gifts-text p {
+.block-with-more-info .find-gifts-for-your-girl .find-gifts-text p {
   padding-top: 16px;
   font-size: 18px;
   font-family: Gilroy, sans-serif;
   line-height: 25px;
 }
-.best-blogs-ever .block-with-more-info .find-gifts-for-your-girl .find-gifts-text li {
-  padding-top: 26px;
-}
-.best-blogs-ever .block-with-more-info .find-gifts-for-your-girl .find-gifts-text li a {
+.block-with-more-info .find-gifts-for-your-girl .find-gifts-text a {
   font-size: 14px;
   font-family: Gilroy, sans-serif;
   line-height: 20px;
   color: black;
 }
-.best-blogs-ever .block-with-more-info .find-gifts-for-your-girl:hover {
+.block-with-more-info .find-gifts-for-your-girl:hover {
   box-shadow: 0 0 20px #F1F1F2;
 }
 
