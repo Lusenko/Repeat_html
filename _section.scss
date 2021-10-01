@@ -7,11 +7,27 @@
 
     background: $greyColor;
 
-    .body-section__column{
+    @media (max-width: 1260px){
+      flex-wrap: wrap;
+      justify-content: center;
+    }
 
+    .body-section__column{
+      flex: 0 1 50%;
       .body-section__item{
 
         padding: 154px 126px 127px 162px;
+
+        @media (max-width: 1450px){
+          padding: 120px 100px;
+        }
+        @media (max-width: 1260px){
+          padding: 100px 80px;
+        }
+        @media (max-width: 768px){
+          padding: 80px 60px;
+          text-align: center;
+        }
         text-align: start;
 
         .body-section__title{
@@ -21,6 +37,14 @@
           line-height:calc(69 / 56 * 100%);
 
           padding: 0 0 36px 0;
+
+          @media (max-width: 1260px){
+            font-size: 46px;
+          }
+          @media (max-width: 500px){
+            padding: 0 46px 30px 46px;
+            font-size: 30px;
+          }
 
         }
         .body-section__text{
@@ -32,6 +56,11 @@
           line-height: 28px;
 
           padding: 0 0 52px 0;
+
+          @media (max-width: 500px){
+            padding: 0 50px 50px 50px;
+            font-size: 16px;
+          }
         }
         .body-section__button{
           background: $orangeColor;
@@ -47,11 +76,24 @@
           color: white;
 
           padding: 23px 25px;
+
+          @media (max-width: 425px){
+            padding: 10px 25px
+          }
+
+          @media (max-width: 500px){
+            padding: 18px 20px;
+          }
         }
       }
     }
     .body-section__img{
       display: flex;
+      flex: 0 1 50%;
+      img{
+        object-fit: cover;
+        object-position: right;
+      }
     }
   }
 }
@@ -61,16 +103,71 @@
 
   background: $greyColor;
 
+  @media (max-width: 1260px){
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+  }
+
   .c-body-section__img{
     display: flex;
+    flex: 0 1 50%;
+
+    @media (max-width: 1260px){
+      order: 2;
+      margin: 0 240px 20px 200px;
+    }
+    @media (max-width: 990px){
+      margin: 0 200px 20px 200px;
+    }
+    @media (max-width: 850px){
+      margin: 0 150px 20px 150px;
+    }
+    @media (max-width: 600px){
+      margin: 0 120px 20px 120px;
+    }
+    @media (max-width: 530px){
+      margin: 0 100px 20px 100px;
+    }
+    @media (max-width: 454px){
+      margin: 0 80px 20px 80px;
+    }
+    @media (max-width: 426px){
+      margin: 0 60px 20px 60px;
+    }
+
+    img{
+      object-fit: cover;
+      object-position: left;
+
+      @media (max-width: 1260px){
+        object-fit: contain;
+      }
+    }
   }
 
   .c-body-section__column{
     text-align: start;
+    flex: 0 1 50%;
+
+    @media (max-width: 1260px){
+      order: 1;
+    }
 
     .c-body-section__item{
 
       padding: 151px 166px 104px 102px;
+
+      @media (max-width: 1450px){
+        padding: 120px 100px;
+      }
+      @media (max-width: 1260px){
+        padding: 100px 300px;
+      }
+      @media (max-width: 768px){
+        padding: 80px 60px;
+        text-align: center;
+      }
 
       .c-body-section__title{
         font-size: 32px;
@@ -87,6 +184,11 @@
         margin: 0 12px 35px 0;
         text-align: justify;
         line-height: 28px;
+
+        @media (max-width: 500px){
+          text-align: start;
+          margin: 0 0 35px 0;
+        }
       }
       .c-body-section__button{
         border: 1px solid $orangeColor;
@@ -96,6 +198,10 @@
         font-family: $GilroyFont;
 
         padding: 24px 46px;
+
+        @media (max-width: 425px){
+          padding: 10px 25px
+        }
 
         line-height: calc(24 / 18 * 100%);
 
@@ -128,9 +234,16 @@
   .occasion-images{
 
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -15px;
 
     .occasion-column{
+      padding: 0 15px;
+
+      @media (max-width: 1230px){
+        padding: 0 15px 15px 15px;
+      }
 
       .occasion__img{
         display: flex;
@@ -147,7 +260,7 @@
 
             font-size: 20px;
             font-family: $GilroyFont;
-            line-height: (24 / 20 * 100%);
+            line-height: calc(24 / 20 * 100%);
 
             padding: 0 0 74px 0;
           }
@@ -182,11 +295,18 @@
 
     align-items: center;
 
+    @media (max-width: 890px){
+      flex-direction: column;
+    }
+
     .support-item{
       text-align: start;
 
       padding: 75px 0;
 
+      @media (max-width: 890px){
+        padding: 60px 0;
+      }
       .support__title{
         font-size: 32px;
         font-family: $GilroyFont;
@@ -205,6 +325,17 @@
       & > *:not(:last-child){
         margin: 0 16px 0 0;
       }
+
+      @media (max-width: 890px){
+        padding: 0 0 30px 0;
+      }
+      @media (max-width: 500px){
+        flex-direction: column;
+        & > *:not(:last-child){
+          margin: 0 0 10px 0;
+        }
+      }
+
       .support-button{
 
         padding: 14px 24px;
@@ -257,14 +388,47 @@
     margin: 71px 135px 0 135px;
     background: #231F20;
 
+    @media (max-width: 1260px){
+      flex-direction: column;
+      margin: 71px 200px 0 200px;
+    }
+    @media (max-width: 840px){
+      margin: 71px 150px 0 150px;
+    }
+    @media (max-width: 670px){
+      margin: 71px 100px 0 100px;
+    }
+    @media (max-width: 590px){
+      margin: 71px 30px 0 30px;
+    }
+
     .blogs__img{
       display: flex;
+
+      @media (max-width: 1260px){
+        margin: 30px auto 0 auto;
+        max-width: 50%;
+      }
+      @media (max-width: 930px){
+        max-width: 70%;
+      }
     }
 
     .blogs-info{
       text-align: start;
 
-      padding: 63px 200px 0 78px;
+      @media (max-width: 1260px){
+        text-align: center;
+        padding: 63px 78px 20px 78px;
+      }
+      @media (max-width: 800px){
+        padding: 63px 60px 20px 60px;
+      }
+      @media (max-width: 425px){
+        padding: 63px 50px 20px 50px;
+      }
+
+      padding: 63px 200px 40px 78px;
       .blogs-name__text{
         padding: 0 0 27px 0;
 
@@ -284,6 +448,16 @@
         line-height: calc(58 / 48 * 100%);
 
         color: white;
+
+        @media (max-width: 930px){
+          font-size: 40px;
+        }
+        @media (max-width: 670px){
+          font-size: 38px;
+        }
+        @media (max-width: 590px){
+          font-size: 34px;
+        }
       }
       .blogs__link{
         font-size: 18px;
@@ -301,6 +475,20 @@
     display: flex;
     justify-content: space-between;
 
+    @media (max-width: 1260px){
+      flex-direction: column;
+      margin: 40px 200px 80px 200px;
+    }
+    @media (max-width: 840px){
+      margin: 40px 150px 80px 150px;
+    }
+    @media (max-width: 670px){
+      margin: 40px 100px 80px 100px;
+    }
+    @media (max-width: 590px){
+      margin: 40px 30px 40px 30px;
+    }
+
     .find-gifts-for-your-girl{
       display: flex;
       flex-direction: column;
@@ -309,6 +497,10 @@
 
       .find-gifts-text{
         padding: 48px 51px 50px 48px;
+
+        @media (max-width: 425px){
+          padding: 20px 35px 50px 35px;
+        }
 
         & > *:not(:last-child){
           margin: 0 0 16px 0;

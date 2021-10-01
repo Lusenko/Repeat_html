@@ -8,6 +8,26 @@
   justify-content: space-between;
   align-items: center;
 
+  .burger-button{
+    display: none;
+    width: 20px;
+
+    @media (max-width: 710px){
+      display: block;
+      margin: 0 100px 0 0;
+    }
+    @media (max-width: 500px){
+      margin: 0 40px 0 0;
+    }
+
+    & > *:not(:last-child){
+      margin: 0 0 3px 0 ;
+    }
+    .line{
+      border: .1px solid black;
+    }
+  }
+
   .header-text-logo {
 
     .text-logo{
@@ -18,6 +38,10 @@
 
       padding: 39px 80px;
 
+      @media (max-width: 821px){
+        padding: 39px 50px;
+      }
+
     }
   }
 
@@ -25,8 +49,17 @@
     margin: 0 auto;
     text-align: center;
 
+    @media (max-width: 710px){
+      display: none;
+    }
     .menu-link{
       display: flex;
+      flex: 0 1 25%;
+
+      @media (max-width: 821px){
+        flex-wrap: wrap;
+        flex: 0 1 50%;
+      }
 
       & > *:not(:last-child){
         padding: 0 31px 0 0;
@@ -45,10 +78,13 @@
     }
   }
   .button-in-menu{
-    width: 150px;
-    height: 43px;
 
+    @media (max-width: 710px){
+      display: none;
+    }
     margin: 36px 34px 35px;
+
+    padding: 10.73px 24px;
 
     border-radius: 5px;
 
@@ -60,5 +96,46 @@
     background: $mainGreyColor;
     color: $orangeColor;
 
+    @media (max-width: 821px){
+      margin: 36px 20px 35px;
+    }
+    @media (max-width: 732px){
+      padding: 7.73px 13px;
+    }
+  }
+}
+.modal-window{
+  position: fixed;
+  display: none;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0);
+
+  .modal{
+    width: 100%;
+    background: white;
+
+    .close-modal{
+      font-size: 20px;
+      font-weight: bold;
+
+      padding: 15px 0 0 15px;
+    }
+    .nav-menu-kink{
+      text-align: center;
+      padding: 0 0 30px 0;
+      .menu-link{
+        & > *:not(:last-child){
+          margin: 0 0 10px 0;
+        }
+        li{
+          .nav-link{
+            font-size: 18px;
+            color: black;
+          }
+        }
+      }
+    }
   }
 }
